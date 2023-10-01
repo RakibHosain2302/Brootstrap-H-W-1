@@ -1,0 +1,14 @@
+
+
+ @media (min-width:992px)  {
+    nav{
+      box-shadow: none;
+    }
+  } 
+  
+  @media (max-width:991px)  {
+    #customNav li{
+      text-align: right;
+    }
+  }
+ 

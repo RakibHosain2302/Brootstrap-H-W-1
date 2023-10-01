@@ -1,0 +1,82 @@
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* common css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "PT Sans", sans-serif;
+  --primaryColor: #fc0;
+  --secondaryColor: #353535;
+}
+
+ ol,ul{
+  list-style: none;
+ }
+
+a{
+  text-decoration: none;
+ }
+ 
+ h1,h2,h3,h4,h5,h6,p,ul,span,ol{
+  margin: 0;
+  padding: 0;
+ } 
+
+ body{
+  font-family: var(--primaryFont);
+ }
+ /* common css ends */
+
+
+ /* navbar css */
+ nav{
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 16px !important;
+ }
+ 
+#customNav li a{
+  color: var(--secondaryColor);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 200%;  
+  padding: 18px 22px 5px 0;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+
+ }
+
+
+#customNav li a::before{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color:var(--secondaryColor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+   
+ }
+ 
+#customNav li:hover a::before{
+  width: 80%;
+}
+nav .navbar-toggler{
+  border: none;
+}
+nav .navbar-toggler:focus{  
+  box-shadow: none;
+
+}
+
+/* navbar css ends */
